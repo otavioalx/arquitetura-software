@@ -6,7 +6,7 @@ void main(){
         product.setName("Celular");
         product.setSku("TSH-BLU-MED");
         product.setPrice(new BigDecimal("1000"));
-        product.setPrice(new BigDecimal("967"));
+        product.setPrice(new BigDecimal("990"));
 
 //        IO.println(product.toString());
         System.out.println(product.toString());
