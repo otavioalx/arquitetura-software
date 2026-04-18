@@ -1,30 +1,51 @@
 package domain;
 
-import java.math.BigDecimal;
+import java.lang.Float;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.UUID;
 
 public class Product implements EntityInterface{
     private UUID uuid;
-
     private String sku;
     private String name;
-    private BigDecimal price;
+    private Float price;
     private Date datePrice;
     private ArrayList<Price> historicalPrice = new ArrayList<>();
 
     public Product() {
     }
 
-    public Product(String sku, String name, BigDecimal price) {
+    public Product(String sku, String name, Float price) {
         this.sku = sku;
         this.name = name;
         this.price = price;
     }
 
-
-    public Product(UUID uuid, String sku, String name, BigDecimal price) {
+    public Product(UUID uuid, String sku, String name, Float price) {
         this.uuid = uuid;
         this.sku = sku;
         this.name = name;
@@ -34,24 +55,23 @@ public class Product implements EntityInterface{
     public String getSku() {
         return sku;
     }
-
     public void setSku(String sku) {
         this.sku = sku;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    public BigDecimal getPrice() {
+    public Float getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+
+
+
+    public void setPrice(Float price) {
         if (this.price != null && this.datePrice != null){
             Price oldPrice = new Price(this.price, this.datePrice);
             historicalPrice.add(oldPrice);
@@ -59,26 +79,24 @@ public class Product implements EntityInterface{
 
         this.price = price;
         this.datePrice = new Date();
-
-
     }
+
+
+
+
 
     public Date getDatePrice() {
         return datePrice;
     }
-
     public void setDatePrice(Date datePrice) {
         this.datePrice = datePrice;
     }
-
     public ArrayList<Price> getHistoricalPrice() {
         return historicalPrice;
     }
-
     public void setHistoricalPrice(ArrayList<Price> historicalPrice) {
         this.historicalPrice = historicalPrice;
     }
-
 
     @Override
     public UUID getUUID() {
