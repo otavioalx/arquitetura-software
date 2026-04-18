@@ -1,9 +1,7 @@
 package service;
-
 import adapter.DatabaseStorage;
 import adapter.PersistInterface;
 import domain.EntityInterface;
-
 import java.util.ArrayList;
 import java.util.UUID;
 

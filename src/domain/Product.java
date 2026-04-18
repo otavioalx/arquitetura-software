@@ -1,32 +1,9 @@
 package domain;
-
 import java.lang.Float;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.UUID;
+//CONFIRMAR SE TA CERTO ESSA MUDANÇA
 
 public class Product implements EntityInterface{
     private UUID uuid;
@@ -68,22 +45,14 @@ public class Product implements EntityInterface{
         return price;
     }
 
-
-
-
     public void setPrice(Float price) {
         if (this.price != null && this.datePrice != null){
             Price oldPrice = new Price(this.price, this.datePrice);
             historicalPrice.add(oldPrice);
         }
-
         this.price = price;
         this.datePrice = new Date();
     }
-
-
-
-
 
     public Date getDatePrice() {
         return datePrice;

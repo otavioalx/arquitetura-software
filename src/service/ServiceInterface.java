@@ -1,7 +1,5 @@
 package service;
-
 import domain.EntityInterface;
-
 import java.util.UUID;
 
 public interface ServiceInterface {

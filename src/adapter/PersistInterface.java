@@ -1,7 +1,5 @@
 package adapter;
-
 import domain.EntityInterface;
-
 import java.util.ArrayList;
 import java.util.UUID;
 

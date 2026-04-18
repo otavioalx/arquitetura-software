@@ -11,8 +11,6 @@ void main(){
                 "asas",
                 2f)
     );
-
-
     productService.listAll();
 }
 
