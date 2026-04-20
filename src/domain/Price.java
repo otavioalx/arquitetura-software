@@ -1,8 +1,8 @@
 package domain;
-
 import java.lang.Float;
 import java.util.Date;
 import java.util.UUID;
+//CONFIRMAR SE TA CERTO ESSA MUDANÇA
 
 public class Price implements EntityInterface{
     private UUID uuid;
