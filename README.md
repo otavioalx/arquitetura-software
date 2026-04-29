@@ -1,4 +1,4 @@
-#  Price Comparator - Academic Lab
+#  Comparador de preços sendo desenvolvido em aula
 
 
 ###  Sobre o Projeto
